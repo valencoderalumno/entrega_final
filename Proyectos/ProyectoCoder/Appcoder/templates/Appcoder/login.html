@@ -1,0 +1,28 @@
+{% extends "Appcoder/padre.html" %}
+
+{% load static %}
+
+
+{% block titulo %}
+
+Aca podemos iniciar sesion
+
+{% endblock %}
+
+{% block descripcion %}
+
+<form action="" method="post">{% csrf_token %}
+
+
+{{formulario.as_p}}
+
+<button type="submit">Iniciar sesion</button>
+
+
+
+
+
+</form>
+
+{% endblock %}
+ 

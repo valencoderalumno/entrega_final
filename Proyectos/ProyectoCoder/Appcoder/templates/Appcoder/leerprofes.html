@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for profe in teachers %}
+
+    <p>Nombre: {{profe.nombre}}</p> 
+    <p>Apellido: {{profe.apellido}}</p> 
+    <p>Correo: {{profe.correo}}</p> 
+    <p>Profesion: {{profe.profesion}}</p> 
+    
+    <button>
+        <a href="{% url 'eliminarprofesores' profe.nombre %}"> Eliminar profesor</a>
+    </button>
+
+   #################################################
+
+    {% endfor %}
+</body>
+</html>
